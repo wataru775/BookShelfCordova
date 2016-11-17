@@ -1,7 +1,11 @@
-<ion-view ng-controller="onLoadChats">
-  <ion-content>
-    <ion-list>
-        <ion-item class="item-avatar" ng-repeat="book in books">
+<ion-view >
+  <ion-content id="content"
+               on-swipe-right="onSwipeRight()"
+               on-swipe-left="onSwipeLeft()"
+               >
+<!-- http://embed.plnkr.co/XMFORE/ -->
+    <ion-list cache-view="false">
+        <ion-item class="item-avatar" ng-repeat="book in show_books" >
         <img ng-src="{{book.amazon_image}}">
         <h2>{{book.title}}</h2>
       </ion-item>

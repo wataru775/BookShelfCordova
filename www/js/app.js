@@ -17,9 +17,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('view', {
       url: '/view',
-      templateUrl: 'templates/view.html'
+      templateUrl: 'templates/view.html',
+      controller: 'HomeCtrl'
     })
 
   $urlRouterProvider.otherwise('/view');
 
-});
+})
+;
